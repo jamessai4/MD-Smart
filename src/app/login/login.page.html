@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <!-- <ion-title>เข้าสู่ระบบ</ion-title> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form class="buttom">
+    <ion-item lines="full">
+      
+      <ion-label class="font" position="floating">📝 เบอร์โทร/อีเมล</ion-label>
+      <ion-input class="font2" type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label class="font" position="floating">🔐 รหัสผ่าน</ion-label>
+      <ion-input class="font2" type="password" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <br><ion-button type="submit" color="primary" expand="block" [routerLink]="['/landing-page']" >เข้าสู่ระบบ</ion-button>
+        <!-- <a [routerLink]="['/forgotpassword']" class="small-text">ลืมรหัส ?</a> -->
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
