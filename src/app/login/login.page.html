@@ -12,19 +12,22 @@
     <ion-item lines="full">
       
       <ion-label class="font" position="floating">📝 เบอร์โทร/อีเมล</ion-label>
-      <ion-input class="font2" type="text" required></ion-input>
+      <ion-input class="font2" type="text" required name="email" [(ngModel)]="email"></ion-input>
     </ion-item>
 
     <ion-item lines="full">
       <ion-label class="font" position="floating">🔐 รหัสผ่าน</ion-label>
-      <ion-input class="font2" type="password" required></ion-input>
+      <ion-input class="font2" type="password" required name="password" [(ngModel)]="password"></ion-input>
     </ion-item>
 
     <ion-row>
       <ion-col>
-        <br><ion-button type="submit" color="primary" expand="block" [routerLink]="['/landing-page']" >เข้าสู่ระบบ</ion-button>
+        <br><ion-button type="submit" color="primary" expand="block" (click)="login()">เข้าสู่ระบบ</ion-button>
         <!-- <a [routerLink]="['/forgotpassword']" class="small-text">ลืมรหัส ?</a> -->
       </ion-col>
+      <!-- <ion-col>
+        <br><ion-button type="submit" color="danger" expand="block" (click)="gmail()" >เข้าสู่ระบบด้วย gmail</ion-button>
+      </ion-col> -->
     </ion-row>
   </form>
 </ion-content>
