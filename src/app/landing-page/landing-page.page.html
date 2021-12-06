@@ -1,46 +1,60 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <!-- <ion-title>เข้าสู่ระบบ</ion-title> -->
+    <ion-title>เข้าสู่ระบบ</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content>
-      <!-- <ion-col align-self-center> -->
-        <div class="buttom">
+  
+    <ion-buttons>
+      <ion-back-button>asdf</ion-back-button>
+    </ion-buttons>
+  
 
-          <!-- การ์ดรูปภาพ <ion-card class="color1" [routerLink]="['/contact']">
+  <!-- <ion-col align-self-center> -->
+  <div class="buttom">
+
+    การ์ดรูปภาพ <ion-card class="color1" [routerLink]="['/contact']">
             <img class="displayed" src="../../assets/img/about.png" />
             <ion-card-header>
               <ion-card-title><h5>ข้อมูลส่วนตัว</h5></ion-card-title>
             </ion-card-header>
-          </ion-card> -->
+          </ion-card>
 
-        <ion-grid>
-          <ion-row>
-            <ion-col>
-              <ion-button ion-button color="tertiary" expand="block" round icon-start [routerLink]="['/profile']"> <ion-icon name="document-text"></ion-icon>  ข้อมูลส่วนตัว </ion-button>
-            </ion-col>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button ion-button color="tertiary" expand="block" round icon-start [routerLink]="['/profile']">
+            <ion-icon name="document-text"></ion-icon> ข้อมูลส่วนตัว
+          </ion-button>
+        </ion-col>
 
-            <ion-col>
-              <ion-button ion-button color="danger" expand="block" round icon-start> <ion-icon name="create"></ion-icon> การจองคิว </ion-button>
-            </ion-col>
+        <ion-col>
+          <ion-button ion-button color="danger" expand="block" round icon-start>
+            <ion-icon name="create"></ion-icon> การจองคิว
+          </ion-button>
+        </ion-col>
 
-          </ion-row>
+      </ion-row>
 
-          <ion-row>
-            <ion-col>
-              <ion-button ion-button color="warning" expand="block" round icon-start [routerLink]="['/contact']"> <ion-icon name="call"></ion-icon>  ติดต่อ </ion-button>
-            </ion-col>
+      <ion-row>
+        <ion-col>
+          <ion-button ion-button color="warning" expand="block" round icon-start [routerLink]="['/contact']">
+            <ion-icon name="call"></ion-icon> ติดต่อ
+          </ion-button>
+        </ion-col>
 
-            <ion-col>
-              <ion-button ion-button color="warning" expand="block" round icon-start [routerLink]="['/about']"> <ion-icon name="book"></ion-icon> เกี่ยวกับเรา </ion-button>
-            </ion-col>
+        <ion-col>
+          <ion-button ion-button color="warning" expand="block" round icon-start [routerLink]="['/about']">
+            <ion-icon name="book"></ion-icon> เกี่ยวกับเรา
+          </ion-button>
+        </ion-col>
 
-          </ion-row>
-        </ion-grid>
-        </div>
+      </ion-row>
+    </ion-grid>
+  </div>
 
 </ion-content>

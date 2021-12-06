@@ -10,44 +10,44 @@
 <ion-content>
   <form class="buttom">
     <!-- <ion-item lines="full"></ion-item> -->
-    <ion-item>
+    <!-- <ion-item>
       <ion-label class="font" position="floating">📝 คำนำหน้า</ion-label>
       <ion-input class="font2" type="text" required></ion-input>
-    </ion-item>
+    </ion-item> -->
     
     <ion-item>
       <ion-label class="font" position="floating">📝 ชื่อ-นามสกุล</ion-label>
-      <ion-input class="font2" type="text" required></ion-input>
+      <ion-input class="font2" type="text" name="name" [(ngModel)]="name"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label class="font" position="floating">📝 อายุ</ion-label>
-      <ion-input class="font2" type="text" required></ion-input>
+      <ion-input class="font2" type="text" name="age" [(ngModel)]="age"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label class="font" position="floating">📝 เลขบัตรประชาชน</ion-label>
-      <ion-input class="font2" type="text" required></ion-input>
+      <ion-input class="font2" type="text" name="idcard"  [(ngModel)]="idcard"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label class="font" position="floating">📧 อีเมล</ion-label>
-      <ion-input class="font2" type="text" required></ion-input>
+      <ion-input class="font2" type="text" name="email" [(ngModel)]="email"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label class="font" position="floating">🔐 รหัสผ่าน</ion-label>
-      <ion-input class="font2" type="password" required></ion-input>
+      <ion-input class="font2" type="password" name="password" [(ngModel)]="password"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label class="font" position="floating">🔐 ยืนยันรหัสผ่าน</ion-label>
-      <ion-input class="font2" type="password" required></ion-input>
+      <ion-input class="font2" type="password" name="cpassword" [(ngModel)]="cpassword"></ion-input>
     </ion-item>
 
     <ion-row>
       <ion-col>
-        <ion-button type="submit" color="danger" expand="block">ลงทะเบียน</ion-button>
+        <ion-button type="submit" color="danger" expand="block" (click)="submit()">ลงทะเบียน</ion-button>
       </ion-col>
     </ion-row>
   </form>
