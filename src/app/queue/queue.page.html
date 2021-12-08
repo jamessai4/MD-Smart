@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <!-- <ion-title>ลงทะเบียน</ion-title> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form class="buttom">
+    <!-- <ion-item lines="full"></ion-item> -->
+    <!-- <ion-item>
+      <ion-label class="font" position="floating">📝 คำนำหน้า</ion-label>
+      <ion-input class="font2" type="text" required></ion-input>
+    </ion-item> -->
+    
+    <ion-item>
+      <ion-label class="font" position="floating">📝 ชื่อ-นามสกุล</ion-label>
+      <ion-input class="font2" type="text" name="name" [(ngModel)]="name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="font" position="floating">📝 รายละเอียดอาการ</ion-label>
+      <ion-input class="font2" type="text" name="age" [(ngModel)]="age"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="font" position="floating">📝 วันที่-เวลา</ion-label>
+      <ion-input class="font2" type="text" name="idcard"  [(ngModel)]="idcard"></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="danger" expand="block" (click)="submit()">ยืนยัน</ion-button>
+      </ion-col>
+    </ion-row>
+
+  </form>
+</ion-content>
