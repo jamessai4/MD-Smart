@@ -3,14 +3,14 @@
 ion-content{
     // --ion-background-color:rgb(17,231,244,100);
     // --ion-background-color: linear-gradient(180deg, rgba(17,231,244,100) 0%, rgba(17,121,244,100) 60%, rgba(100,17,244,100) 80%);
-    --background: url("../../assets/img/BGREGISTER.png")no-repeat center/cover fixed;;
+    --background: url("../../assets/img/BG-LANDINGPAGE-Profile.png")no-repeat center/cover fixed;;
   }
   ion-item{
-    --background: url("../../assets/img/BGREGISTER.png")no-repeat center/cover fixed;;
+    --background: url("../../assets/img/BG-LANDINGPAGE-Profile.png")no-repeat center/cover fixed;;
     margin-top: auto;
   }
   ion-toolbar{
-    --background: url("../../assets/img/BGREGISTER.png")no-repeat center/cover fixed;;
+    --background: url("../../assets/img/BG-LANDINGPAGE-Profile.png")no-repeat center/cover fixed;;
   }
   .header-ios ion-toolbar:last-of-type {
     --border-width: 0 0 0px;
@@ -47,4 +47,8 @@ p{
   font-family: 'Itim', cursive;
   font-size: 18px;
   color: brown;
+}
+
+ion-text{
+  padding: 10%;
 }

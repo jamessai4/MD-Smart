@@ -3,14 +3,21 @@
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <!-- <ion-title>เข้าสู่ระบบ</ion-title> -->
+   <!-- <ion-title>เข้าสู่ระบบ</ion-title> -->
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <!-- <div style="margin: 10px;">
+    <ion-buttons class="buttonback">
+      <ion-icon name="arrow-back-circle-outline" routerLink="/home"></ion-icon>
+    </ion-buttons>
+  </div> -->
+
   <form class="buttom">
     <ion-item lines="full">
-      
+
       <ion-label class="font" position="floating">📝 เบอร์โทร/อีเมล</ion-label>
       <ion-input class="font2" type="text" required name="email" [(ngModel)]="email"></ion-input>
     </ion-item>
@@ -22,7 +29,8 @@
 
     <ion-row>
       <ion-col>
-        <br><ion-button type="submit" color="primary" expand="block" (click)="login()">เข้าสู่ระบบ</ion-button>
+        <br>
+        <ion-button type="submit" color="primary" expand="block" (click)="login()">เข้าสู่ระบบ</ion-button>
         <!-- <a [routerLink]="['/forgotpassword']" class="small-text">ลืมรหัส ?</a> -->
       </ion-col>
       <!-- <ion-col>

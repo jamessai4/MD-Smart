@@ -3,11 +3,11 @@
 ion-content{
     // --ion-background-color:rgb(17,231,244,100);
     // --ion-background-color: linear-gradient(180deg, rgba(17,231,244,100) 0%, rgba(17,121,244,100) 60%, rgba(100,17,244,100) 80%);
-    --background: url("../../assets/img/BGLANDINGPAGE.png") no-repeat center/cover fixed;;
+    --background: url("../../assets/img/BG-LANDINGPAGE-Landing.png") no-repeat center/cover fixed;;
   }
 
   ion-toolbar{
-    --background: url("../../assets/img/BGLANDINGPAGE.png")no-repeat center/cover fixed;;
+    --background: url("../../assets/img/BG-LANDINGPAGE-Landing.png")no-repeat center/cover fixed;;
   }
 
   .header-ios ion-toolbar:last-of-type {
@@ -15,7 +15,7 @@ ion-content{
 }
 
   ion-item{
-    --background: url("../../assets/img/BGLANDINGPAGE.png")no-repeat center/cover fixed;;
+    --background: url("../../assets/img/BG-LANDINGPAGE-Landing.png")no-repeat center/cover fixed;;
     margin-top: 5%;
   }
 
@@ -65,3 +65,9 @@ IMG.displayed {
     text-align: center;
   }
 
+  ion-slide{
+    height: auto;
+    width: auto;
+  }
+
+  
