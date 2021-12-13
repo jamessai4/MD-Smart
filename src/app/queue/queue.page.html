@@ -14,20 +14,20 @@
       <ion-label class="font" position="floating">📝 คำนำหน้า</ion-label>
       <ion-input class="font2" type="text" required></ion-input>
     </ion-item> -->
-    
+
     <ion-item>
-      <ion-label class="font" position="floating">📝 ชื่อ-นามสกุล</ion-label>
-      <ion-input class="font2" type="text" name="name" [(ngModel)]="name"></ion-input>
+      <ion-label class="font">📝 ชื่อ-นามสกุล</ion-label>
+      <ion-label class="font">{{ (items | async)?.name }}</ion-label>
     </ion-item>
 
     <ion-item>
       <ion-label class="font" position="floating">📝 รายละเอียดอาการ</ion-label>
-      <ion-input class="font2" type="text" name="age" [(ngModel)]="age"></ion-input>
+      <ion-input class="font2" type="text" name="age" [(ngModel)]="symptom"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label class="font" position="floating">📝 วันที่-เวลา</ion-label>
-      <ion-input class="font2" type="text" name="idcard"  [(ngModel)]="idcard"></ion-input>
+      <ion-input class="font2" type="text" name="idcard" [(ngModel)]="date"></ion-input>
     </ion-item>
 
     <ion-row>

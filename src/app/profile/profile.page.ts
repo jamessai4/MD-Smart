@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from '@angular/fire/compat/firestore';
+import { Observable } from 'rxjs';
+import { AuthService } from '../auth.service';
+
 
 @Component({
   selector: 'app-profile',
@@ -7,9 +11,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfilePage implements OnInit {
 
-  constructor() { }
+  constructor(
+    private firestore: AngularFirestore,
+    public auth:AuthService) {
+      this.itemCollection = firestore.collection<any>('users' );
+      this.items = this.itemCollection.doc(auth.user.uid).valueChanges();
+  }
+
+  itemCollection: AngularFirestoreCollection<any>;
+  items: Observable<any>;
+
+  test:string;
 
   ngOnInit() {
+    this.items.subscribe((res:any)=>{
+      console.log(res)
+    })
   }
 
 }
