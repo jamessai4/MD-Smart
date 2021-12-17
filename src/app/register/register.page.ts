@@ -1,3 +1,5 @@
+import { AlertController, NavController } from '@ionic/angular';
+
 import { Component, OnInit } from '@angular/core';
 
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
@@ -11,7 +13,12 @@ import firebase from 'firebase/compat/app';
 })
 export class RegisterPage implements OnInit {
 
-  constructor(public auth: AngularFireAuth, private firestore: AngularFirestore) {
+  constructor(
+    public auth: AngularFireAuth,
+    private firestore: AngularFirestore,
+    private nav: NavController,
+    public alertController: AlertController
+    ) {
     this.worksCollection = firestore.collection<any>('users')
   }
 
@@ -54,4 +61,5 @@ export class RegisterPage implements OnInit {
         })
       })
   }
+
 }

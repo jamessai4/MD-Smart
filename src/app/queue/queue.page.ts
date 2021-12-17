@@ -18,7 +18,7 @@ export class QueuePage implements OnInit {
   }
 
   itemCollection: AngularFirestoreCollection<any>;
-  items: Observable<any>;
+  items: any;
 
   ngOnInit() {
     this.items.subscribe((res:any)=>{

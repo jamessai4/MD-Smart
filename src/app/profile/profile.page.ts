@@ -19,7 +19,7 @@ export class ProfilePage implements OnInit {
   }
 
   itemCollection: AngularFirestoreCollection<any>;
-  items: Observable<any>;
+  items: any;
 
   test:string;
 
