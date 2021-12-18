@@ -1,36 +1,65 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
-    </ion-buttons>
-    <!-- <ion-title>เข้าสู่ระบบ</ion-title> -->
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <!-- <ion-title>เข้าสู่ระบบ</ion-title> -->
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
-      <!-- <ion-col align-self-center> -->
-        <div class="buttom">
+    <!-- <ion-col align-self-center> -->
+    <div class="buttom">
         <ion-grid>
-          <ion-row>
+            <ion-row>
 
-            <ion-text>
-              <p>ติดต่อ/สอบถาม</p>
-            </ion-text>
+                <ion-text>
+                    <p>ติดต่อ/สอบถาม</p>
+                </ion-text>
 
-            <ion-col>
-              <ion-button ion-button color="danger" expand="block" round icon-start> <ion-icon name="logo-facebook"></ion-icon> Facebook </ion-button>
-            </ion-col>
+                <ion-card>
+                    <img src="../../assets/img/qrcodefacebook.png" />
+                    <ion-card-header>
+                        <ion-card-subtitle>Fanpage : Facebook</ion-card-subtitle>
+                        <ion-card-title>คลินิกไตเทียมนครชัยศรี</ion-card-title>
+                    </ion-card-header>
+                </ion-card>
 
-            <ion-col>
-              <br><ion-button ion-button color="danger" expand="block" round icon-start> <ion-icon name="create"></ion-icon> Line </ion-button>
-            </ion-col>
+                <!-- <ion-card>
+                    <img src="../../assets/img/commingsoon.jpg" />
+                    <ion-card-header>
+                        <ion-card-subtitle>ID : Line</ion-card-subtitle>
+                        <ion-card-title>0926929955</ion-card-title>
+                    </ion-card-header>
+                </ion-card>
 
-            <ion-col>
-              <br><ion-button ion-button color="danger" expand="block" round icon-start> <ion-icon name="call"></ion-icon> Phone </ion-button>
-            </ion-col>
+                <ion-card>
+                    <img src="../../assets/img/commingsoon.jpg" />
+                    <ion-card-header>
+                        <ion-card-subtitle>Phone : Number</ion-card-subtitle>
+                        <ion-card-title>092-692-9955</ion-card-title>
+                    </ion-card-header>
+                </ion-card> -->
 
-          </ion-row>
+                <!-- <ion-col>
+                    <ion-button ion-button color="danger" expand="block" round icon-start>
+                        <ion-icon name="logo-facebook"></ion-icon> Facebook </ion-button>
+                </ion-col>  -->
+
+                <ion-col>
+                    <br>
+                    <ion-button ion-button color="danger" expand="block" round icon-start (click)="submit1()">
+                        <!-- <ion-icon name="create"></ion-icon>-->📗 Line ID : 0926929955 </ion-button>
+                </ion-col>
+
+                <ion-col>
+                    <br>
+                    <ion-button ion-button color="danger" expand="block" round icon-start (click)="submit2()">
+                        <!-- <ion-icon name="call"></ion-icon>-->📞 Phone : 092-692-9955 </ion-button>
+                </ion-col>
+
+            </ion-row>
         </ion-grid>
-        </div>
+    </div>
 
 </ion-content>
