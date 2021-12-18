@@ -11,57 +11,62 @@
 
 
 
-  <!-- <ion-col align-self-center> -->
-  <div class="buttom">
+    <!-- <ion-col align-self-center> -->
+    <div class="buttom">
+        <ion-row class="row1">
+            <ion-col size="4" style="border-right-style: none;">
+                <div>👤 อีเมลผู้ใช้ :</div>
+            </ion-col>
+            <ion-col>
+                <div>{{email}}</div>
+            </ion-col>
+        </ion-row>
 
-    <div>
-      {{email}}
+        <!-- Slide รูปภาพ -->
+        <ion-card>
+            <ion-slides [options]="{autoplay:true}">
+                <ion-slide>
+                    <img src="../../assets/img/14.jpg" alt="">
+                </ion-slide>
+                <ion-slide>
+                    <img src="../../assets/img/15.jpg" alt="">
+                </ion-slide>
+            </ion-slides>
+        </ion-card>
+
+        <ion-grid>
+            <ion-row>
+                <ion-col>
+                    <ion-button ion-button color="tertiary" expand="block" round icon-start [routerLink]="['/profile']">
+                        <!-- <ion-icon name="document-text"></ion-icon>-->📋 ข้อมูลส่วนตัว
+                    </ion-button>
+                </ion-col>
+
+                <ion-col>
+                    <ion-button ion-button color="danger" expand="block" round icon-start [routerLink]="['/queue']">
+                        <!-- <ion-icon name="create"></ion-icon>-->📅 การจองคิว
+                    </ion-button>
+                </ion-col>
+
+            </ion-row>
+
+            <ion-row>
+                <ion-col>
+                    <ion-button ion-button color="warning" expand="block" round icon-start [routerLink]="['/contact']">
+                        <!-- <ion-icon name="call"></ion-icon>-->📞 ติดต่อ
+                    </ion-button>
+                </ion-col>
+
+                <ion-col>
+                    <ion-button ion-button color="warning" expand="block" round icon-start [routerLink]="['/about']">
+                        <!-- <ion-icon name="book"></ion-icon>-->🔍 เกี่ยวกับเรา
+                    </ion-button>
+                </ion-col>
+                <ion-col>
+                    <ion-button color="danger" expand="block" (click)="logout()">🚪 ออกจากระบบ</ion-button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
     </div>
-    <ion-button (click)="logout()">logout</ion-button>
-
-    <!-- Slide รูปภาพ -->
-    <ion-card>
-      <ion-slides [options]="{autopla:true}">
-        <ion-slide>
-          <img src="../../assets/img/14.jpg"alt="">
-        </ion-slide>
-        <ion-slide>
-          <img src="../../assets/img/15.jpg"alt="">
-        </ion-slide>
-      </ion-slides>
-    </ion-card>
-
-    <ion-grid>
-      <ion-row>
-        <ion-col>
-          <ion-button ion-button color="tertiary" expand="block" round icon-start [routerLink]="['/profile']">
-            <ion-icon name="document-text"></ion-icon> ข้อมูลส่วนตัว
-          </ion-button>
-        </ion-col>
-
-        <ion-col>
-          <ion-button ion-button color="danger" expand="block" round icon-start [routerLink]="['/queue']">
-            <ion-icon name="create"></ion-icon> การจองคิว
-          </ion-button>
-        </ion-col>
-
-      </ion-row>
-
-      <ion-row>
-        <ion-col>
-          <ion-button ion-button color="warning" expand="block" round icon-start [routerLink]="['/contact']">
-            <ion-icon name="call"></ion-icon> ติดต่อ
-          </ion-button>
-        </ion-col>
-
-        <ion-col>
-          <ion-button ion-button color="warning" expand="block" round icon-start [routerLink]="['/about']">
-            <ion-icon name="book"></ion-icon> เกี่ยวกับเรา
-          </ion-button>
-        </ion-col>
-
-      </ion-row>
-    </ion-grid>
-  </div>
 
 </ion-content>

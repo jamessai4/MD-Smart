@@ -1,73 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
-
-ion-content{
+ion-content {
     // --ion-background-color:rgb(17,231,244,100);
     // --ion-background-color: linear-gradient(180deg, rgba(17,231,244,100) 0%, rgba(17,121,244,100) 60%, rgba(100,17,244,100) 80%);
-    --background: url("../../assets/img/BG-LANDINGPAGE-Landing.png") no-repeat center/cover fixed;;
-  }
+    --background: url("../../assets/img/BG-LANDINGPAGE-Landing.png") no-repeat center/cover fixed;
+    ;
+}
 
-  ion-toolbar{
-    --background: url("../../assets/img/BG-LANDINGPAGE-Landing.png")no-repeat center/cover fixed;;
-  }
+ion-toolbar {
+    --background: url("../../assets/img/BG-LANDINGPAGE-Landing.png")no-repeat center/cover fixed;
+    ;
+}
 
-  .header-ios ion-toolbar:last-of-type {
+.header-ios ion-toolbar:last-of-type {
     --border-width: 0 0 0px;
 }
 
-  ion-item{
-    --background: url("../../assets/img/BG-LANDINGPAGE-Landing.png")no-repeat center/cover fixed;;
+ion-item {
+    --background: url("../../assets/img/BG-LANDINGPAGE-Landing.png")no-repeat center/cover fixed;
+    ;
     margin-top: 5%;
-  }
+}
 
-  ion-button {
+ion-button {
     font-size: 18px;
-  }
+}
 
-  *{
+* {
     font-family: 'Itim', cursive;
-  }
+}
 
-  .font{
+.font {
     font-size: 17px;
     font-family: 'Itim', cursive;
     color: black;
     // margin-top: 110%;
     // padding: 10%;
-  }
+}
 
-  .font2{
+.font2 {
     font-size: 17px;
     font-family: 'Itim', cursive;
     color: black;
     // margin-top: 110%;
     // padding: 10%;
-  }
+}
 
-  .buttom{
+.buttom {
     // font-size: 15px;
     // font-family: 'Itim', cursive;
     margin-top: 25%;
     padding: 5%;
 }
 
-.color1{
-  background-color: blueviolet;
+.color1 {
+    background-color: blueviolet;
 }
 
 IMG.displayed {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75px;
 }
 
-  h5{
+h5 {
     text-align: center;
-  }
+}
 
-  ion-slide{
+ion-slide {
     height: auto;
     width: auto;
-  }
+}
 
-  
+.row1 {
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    background-color: rgb(221, 116, 116);
+}
