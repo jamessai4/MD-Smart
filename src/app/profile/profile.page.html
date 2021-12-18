@@ -8,14 +8,14 @@
 </ion-header>
 
 <ion-content>
-  <form class="buttom">
     <!-- <ion-item lines="full"></ion-item> -->
-
+    
     <ion-text>
       <p>ข้อมูลส่วนตัว</p>
     </ion-text>
 
-    
+    <form class="buttom">
+
       <ion-item>
         <ion-label class="font" >ชื่อ</ion-label>
         <ion-label class="font" >{{ (items | async)?.name }}</ion-label>
@@ -52,7 +52,7 @@
       </ion-item>
 
       <ion-item>
-        <ion-label class="font" >รายละเอียดอาการ</ion-label>
+        <ion-label class="font" >วันที่-เวลา</ion-label>
         <ion-label class="font" >{{ (items | async)?.date }}</ion-label>
       </ion-item>
    

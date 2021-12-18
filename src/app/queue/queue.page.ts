@@ -36,20 +36,20 @@ export class QueuePage implements OnInit {
   async submit(){
     const alert = await this.alertController.create({
       cssClass: 'my-custom-class',
-      header: 'Confirm!',
-      message: 'Message <strong>text</strong>!!!',
+      header: 'ยืนยัน !',
+      message: 'กรุณาตรวจสอบข้อมูลให้ถูกต้อง !',
       buttons: [
         {
-          text: 'Cancel',
+          text: 'ยกเลิก',
           role: 'cancel',
           cssClass: 'secondary',
           handler: (blah) => {
-            console.log('Confirm Cancel: blah');
+            console.log('LOG : ยกเลิกการทำงาน');
           }
         }, {
-          text: 'Okay',
+          text: 'ยืนยัน',
           handler: () => {
-            console.log('Confirm Okay');
+            console.log('LOG : ยืนยันการทำงาน');
             const item = {
               symptom: this.symptom,
               date: this.date

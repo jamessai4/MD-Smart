@@ -35,20 +35,20 @@ export class RegisterPage implements OnInit {
   async submit() {
     const alert = await this.alertController.create({
       cssClass: 'my-custom-class',
-      header: 'Confirm!',
-      message: 'Message <strong>text</strong>!!!',
+      header: 'ยืนยัน !',
+      message: 'กรุณาตรวจสอบข้อมูลให้ถูกต้อง !',
       buttons: [
         {
-          text: 'Cancel',
+          text: 'ยกเลิก',
           role: 'cancel',
           cssClass: 'secondary',
           handler: (blah) => {
-            console.log('Confirm Cancel: blah');
+            console.log('LOG : ยกเลิกการทำงาน');
           }
         }, {
-          text: 'Okay',
+          text: 'ยืนยัน',
           handler: () => {
-            console.log('Confirm Okay');
+            console.log('LOG : ยืนยันการทำงาน');
             console.log(this.email)
             console.log(this.password)
             this.auth.createUserWithEmailAndPassword(this.email, this.password)
